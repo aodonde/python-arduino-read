@@ -11,7 +11,7 @@ def voltage_into_pH(delta: float, reference: float) -> float:
     #S = 59.16mV
     result = 7 - ((reference - delta)/59.16)
 
-    return round(result,2)
+    return math.ceil(result*100) / 100
 
 
 
